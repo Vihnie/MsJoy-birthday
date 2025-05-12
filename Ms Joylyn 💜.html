@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Happy Birthday Joylyn!</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;700&display=swap" rel="stylesheet" />
+
+  <!-- Inline CSS -->
+  <style>
+    /* Base */
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #d80d80;
+      padding-top: 56px;
+    }
+
+    /* Hero */
+    .hero {
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      color: #fff;
+      font-family: 'Great Vibes', cursive;
+      font-size: 5rem;
+    }
+    .hero h2 {
+      color: #fff;
+      font-family: cursive;
+      font-size: 2rem;
+    }
+
+    /* Section backgrounds */
+    .bg-soft-pink {
+      background-color: #ffe4e1;
+    }
+
+    /* Masonry-style gallery grid */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-auto-rows: 150px;
+      grid-auto-flow: dense;
+      gap: 1rem;
+    }
+
+    /* Variable card sizes */
+    .item-small  { grid-row: span 1; grid-column: span 1; }
+    .item-medium { grid-row: span 2; grid-column: span 1; }
+    .item-large  { grid-row: span 2; grid-column: span 2; }
+
+    /* Card image container */
+    .card-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.75rem;
+      transform: rotate(calc((var(--i,0) - 2) * 2deg));
+      transition: transform 0.3s ease;
+    }
+    .card-image:hover {
+      transform: scale(1.03) rotate(0);
+    }
+
+    /* Responsive images */
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4 / 3;
+      display: block;
+    }
+
+    /* Overlay on hover */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      color: #fff;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s ease;
+    }
+    .card-image:hover .overlay {
+      opacity: 1;
+    }
+
+    /* AOS fade-in */
+    [data-aos] {
+      opacity: 0;
+      transition-property: opacity, transform;
+    }
+    [data-aos].aos-animate {
+      opacity: 1;
+    }
+
+    /* Navbar override */
+    .navbar {
+      background-color: rgba(255,255,255,0.9);
+    }
+
+    /* Form and list-group tweaks */
+    #wishesList .list-group-item {
+      background: rgba(255,255,255,0.8);
+    }
+
+    footer {
+      background-color: #fff0f5;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Joylyn's Gift</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Her">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#wishes">Wishes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Memories">Memories</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" data-aos="fade">
+    <div class="text-center hero-text">
+      <h1>Happy Birthday Ms Joylyn 🥰💕</h1>
+      <h2>Escaping the teen drama 😂😂</h2>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="Her" class="py-5 bg-soft-pink">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4 display-5">Just a Girl💕</h2>
+      <div class="gallery-grid">
+        <div class="card-grid-item item-small" data-aos="zoom-in">
+          <div class="card-image">
+            <img src="Jolly1.jpeg" alt="Jolly" />
+            <div class="overlay"><p>Jolly</p></div>
+          </div>
+        </div>
+        <div class="card-grid-item item-large" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card-image">
+            <img src="Jolly3.jpeg" alt="Jolly" />
+            <div class="overlay"><p>Jolly</p></div>
+          </div>
+        </div>
+        <div class="card-grid-item item-medium" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card-image">
+            <img src="Jolly2.jpeg" alt="Jolly" />
+            <div class="overlay"><p>Jolly</p></div>
+          </div>
+        </div>
+        <div class="card-grid-item item-medium" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card-image">
+            <img src="Jolly4.jpeg" alt="Jolly" />
+            <div class="overlay"><p>Jolly</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wishes Section -->
+  <section id="wishes" class="py-5 bg-soft-pink">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4">Birthday Prayer from Sir.BM</h2>
+      <div class="prayers">
+        <p>
+          May The Lord be your shepherd; therefore you shall not want.<br>
+          May He make you lie down in green pastures; may He lead you beside the still waters.<br>
+          May He restore your soul whenever you are weary; may He strengthen you.<br>
+          May He lead you in the paths of righteousness for His name's sake.<br>
+          Though you walk through the valley of the shadow of death,<br>
+          you will fear no evil; for the Lord is your Shield and Buckler.<br>
+          May His rod and staff comfort you.<br>
+          May the Lord prepare a table before you in the presence of your enemies.<br>
+          May your cup run over.<br>
+          Surely goodness and mercy shall follow you all the days of your life,<br>
+          and you will dwell in the house of the Lord forever.<br>
+          With long life, He will satisfy you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Memories Section -->
+  <section id="Memories" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4 display-5">Memories</h2>
+      <div class="gallery-grid">
+        <div class="card-grid-item item-medium" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card-image">
+            <img src="Memory2.jpeg" alt="Cheeky Us" />
+            <div class="overlay"><p>Always busy😂</p></div>
+          </div>
+        </div>
+        <div class="card-grid-item item-medium" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card-image">
+            <img src="Memory1.jpeg" alt="Cheeky Us" />
+            <div class="overlay"><p>Broke me first💔</p></div>
+          </div>
+        </div>
+        <div class="card-grid-item item-small" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card-image">
+            <img src="Memory3.jpeg" alt="Cheeky Us" />
+            <div class="overlay"><p>Crazy Gal😜</p></div>
+          </div>
+        </div>
+        <div class="card-grid-item item-large" data-aos="zoom-in" data-aos-delay="500">
+          <div class="card-image">
+            <img src="Memory4.jpeg" alt="Cheeky Us" />
+            <div class="overlay"><p>Fungua roho😂</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 text-center">
+    <small>&copy; Sir BM</small>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // AOS initialization
+    AOS.init();
+
+    // Optional: Scroll to top on reload
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+  </script>
+</body>
+</html>
